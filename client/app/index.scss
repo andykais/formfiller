@@ -3,6 +3,13 @@
 // bower:scss
 // endbower
 
+$fa-font-path: '../bower_components/font-awesome/fonts';
+
+// should include skeleton & normalize, look into it
+//@import '../bower_components/Skeleton-Sass/scss/skeleton';
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
