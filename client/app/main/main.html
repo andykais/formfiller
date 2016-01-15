@@ -1,9 +1,4 @@
-<!--<div class="container">-->
-
-  <!--<div>-->
-    <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
-  <!--</div>-->
-  <div id="navbarholder" ng-include src="'app/components/navbar/navbar.html'"></div>
+<div id="navbarholder" ng-include src="'app/components/navbar/navbar.html'"></div>
 
 <div class="container">
 <div class="input-container">
@@ -19,26 +14,11 @@
 </div>
 
   <div class="forms-container">
-    <div class="pdf-container" ng-repeat="form in main.forms">
-      <i class="fa fa-file fa-lg fa-block"></i>
+    <div class="pdf-container three columns" ng-repeat="form in main.forms">
+      <i class="fa fa-file-text-o fa-lg fa-block"></i>
       <!--thumbnails for docs go here-->
       <!--<img id={{form.id}} src={{form.previewLocation}} class="img-thumbnail" height="120" width="80">-->
       <div class="pdf-label" for={{form.id}}>{{form.title}}</div>
     </div>
   </div>
-
 </div>
-
-
-  <!--<div class="col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">-->
-    <!--<div class="thumbnail">-->
-      <!--<img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">-->
-      <!--<div class="caption">-->
-        <!--<h3>{{ awesomeThing.title }}</h3>-->
-        <!--<p>{{ awesomeThing.description }}</p>-->
-        <!--<p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-
-<!--</div>-->
