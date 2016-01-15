@@ -2,13 +2,20 @@
    sass dependencies when defined in the bower.json of your dependencies */
 // bower:scss
 // endbower
+// should include skeleton & normalize, look into it
 
 $fa-font-path: '../bower_components/font-awesome/fonts';
-
-// should include skeleton & normalize, look into it
-//@import '../bower_components/Skeleton-Sass/scss/skeleton';
 @import '../bower_components/font-awesome/scss/font-awesome';
 
+@import 'main/main.scss';
+
+.fa-lg {
+  font-size: 5em;
+}
+.fa-block {
+  display: inline-block;
+  padding-bottom: 10px;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -26,11 +33,11 @@ a {
 }
 
 .container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  //width: 100%;
+  //margin-right: auto;
+  //margin-left: auto;
+  //padding-left: 15px;
+  //padding-right: 15px;
 }
 
 .navbar {

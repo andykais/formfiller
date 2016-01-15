@@ -1,13 +1,13 @@
-<nav class="navbar">
+<div class="navbar">
+
   <a href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</a>
 
   <ul>
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
+    <li ng-class="{ active: isActive('/')}"><a ng-href="/">Home</a></li>
+    <li ng-class="{ active: isActive('/about')}"><a ng-href="/about">About</a></li>
     <li><a ng-href="#">Contact</a></li>
   </ul>
 
-  <ul class="acme-navbar-text">
-    <li>Application was created {{ vm.relativeDate }}.</li>
-  </ul>
-</nav>
+  <div class="date"><span>application was created on:  {{main.creationDate| date}}</span>
+  </div>
+</div>

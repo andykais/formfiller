@@ -1,32 +1,80 @@
 export class MainController {
-  constructor ($timeout, webDevTec, toastr) {
+  constructor () {
     'ngInject';
 
-    this.awesomeThings = [];
-    this.classAnimation = '';
-    this.creationDate = 1452732305587;
-    this.toastr = toastr;
+    this.fields = this.getFields();
+    this.forms = this.getForms();
 
-    this.activate($timeout, webDevTec);
   }
 
-  activate($timeout, webDevTec) {
-    this.getWebDevTec(webDevTec);
-    $timeout(() => {
-      this.classAnimation = 'rubberBand';
-    }, 4000);
+  //Fill in with logic to get information from the backend
+  getFields() {
+    return [
+      {
+        id: 0,
+        title: "First Name",
+        inputType: "Text"
+      },
+      {
+        id: 1,
+        title: "Last Name",
+        inputType: "Text"
+      }
+    ]
   }
 
-  getWebDevTec(webDevTec) {
-    this.awesomeThings = webDevTec.getTec();
-
-    angular.forEach(this.awesomeThings, (awesomeThing) => {
-      awesomeThing.rank = Math.random();
-    });
-  }
-
-  showToastr() {
-    this.toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-    this.classAnimation = '';
+  getForms() {
+    return [
+      {
+        id: 0,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 1,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 2,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 3,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 4,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 5,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 6,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 7,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 8,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      },
+      {
+        id: 9,
+        title: "Test Form",
+        previewLocation: "../../favicon.ico"
+      }
+    ]
   }
 }
