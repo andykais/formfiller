@@ -17,7 +17,14 @@ export function NavbarDirective() {
 }
 
 class NavbarController {
-  constructor () {
+  constructor ($state) {
     'ngInject';
+
+    this.stateService = $state;
+    this.states = this.getStates();
+  }
+
+  getStates() {
+    return this.stateService.get();
   }
 }

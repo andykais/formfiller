@@ -2,17 +2,23 @@ export function routerConfig ($stateProvider, $urlRouterProvider, $locationProvi
   'ngInject';
 
   $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController',
-      controllerAs: 'main'
+    .state('Field Input', {
+      url: '/input',
+      templateUrl: 'app/fieldInput/fieldInput.html',
+      controller: 'FieldInputController',
+      controllerAs: 'fieldInput'
     })
-    .state('about', {
+    .state('Form Creation', {
+      url: '/create',
+      templateUrl: 'app/formCreation/formCreation.html',
+      controller: 'FormCreationController',
+      controllerAs: 'about'
+    })
+    .state('About', {
       url: '/about',
       templateUrl: 'app/about/about.html',
       controller: 'AboutController',
-      controllerAs: 'main'
+      controllerAs: 'about'
     });
 
   $urlRouterProvider.otherwise('/');

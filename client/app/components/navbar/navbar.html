@@ -1,10 +1,11 @@
 <div class="navbar">
 
-  <a href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</a>
+  <a>Form Filler App</a>
 
   <ul>
-    <li ui-sref-active="active" class="item active"><a ui-sref="home" ng-href="/">Home</a></li>
-    <li ui-sref-active="active" class="item active"><a ui-sref="about" ng-href="/">About</a></li>
+    <li ui-sref-active="active" class="item active" ng-repeat="state in vm.states">
+      <a ng-if="state.name != ''" ui-sref={{state.name}}>{{state.name}}</a>
+    </li>
   </ul>
   </div>
 </div>

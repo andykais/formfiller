@@ -1,0 +1,7 @@
+<form>
+  <div class="six columns" ng-repeat="field in vm.fields">
+    <label for={{field.id}}>{{field.title}}</label>
+    <input class="u-full-width" type={{field.inputType}} placeholder={{field.title}} id={{field.id}}>
+  </div>
+  <button type="submit" class="button-primary">Submit</button>
+</form>

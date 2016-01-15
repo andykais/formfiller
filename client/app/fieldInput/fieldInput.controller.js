@@ -1,4 +1,4 @@
-export class MainController {
+export class FieldInputController {
   constructor () {
     'ngInject';
 
@@ -13,12 +13,12 @@ export class MainController {
       {
         id: 0,
         title: "First Name",
-        inputType: "Text"
+        inputType: "text"
       },
       {
         id: 1,
         title: "Last Name",
-        inputType: "Text"
+        inputType: "text"
       }
     ]
   }
