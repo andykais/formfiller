@@ -3,11 +3,8 @@
   <a href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</a>
 
   <ul>
-    <li ng-class="{ active: isActive('/')}"><a ng-href="/">Home</a></li>
-    <li ng-class="{ active: isActive('/about')}"><a ng-href="/about">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
+    <li ui-sref-active="active" class="item active"><a ui-sref="home" ng-href="/">Home</a></li>
+    <li ui-sref-active="active" class="item active"><a ui-sref="about" ng-href="/">About</a></li>
   </ul>
-
-  <div class="date"><span>application was created on:  {{main.creationDate| date}}</span>
   </div>
 </div>
